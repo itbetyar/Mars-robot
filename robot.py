@@ -1,19 +1,35 @@
+""" 
+  __  __          _____   _____    _____   ____  ____   ____ _______ 
+ |  \/  |   /\   |  __ \ / ____|  |  __ \ / __ \|  _ \ / __ \__   __|
+ | \  / |  /  \  | |__) | (___    | |__) | |  | | |_) | |  | | | |   
+ | |\/| | / /\ \ |  _  / \___ \   |  _  /| |  | |  _ <| |  | | | |   
+ | |  | |/ ____ \| | \ \ ____) |  | | \ \| |__| | |_) | |__| | | |   
+ |_|  |_/_/    \_\_|  \_\_____/   |_|  \_\\____/|____/ \____/  |_|   
+                                                                    
+"""  
+
 # IT Betyar 2023.09 | Mars jaro robot
 
-# a megadhato karakterek:
+# Definialjuk, hogy a felhasználó milyen karaktereket adhat meg majd:
 allowed_characters = 'edkn'
+#Észak-dél-kelet-nyugat
 
 # Bekerjuk az irany karaktereket a vezerlo szemelytol
 dir = input("Add meg a robot irányát: ")
+# dir -> direction
 
 # Ellenorizzuk nincs e ervenyetelen karakter
-if all(char in allowed_characters for char in dir):
+# Itt jön képbe a python ALL funkciója -> a teljes "dir" tartalmon végigmegy
+if all(char in allowed_characters for char in dir):  # --> ennek vagy true v false lesz az eredménye
     count_e = 0
     count_d = 0
     count_k = 0
     count_n = 0
+    # ha true (minden karaker oké, akkor létrehozunk számoló konténereket
+    # ha FALSE, akkor ez egész IF rész nem igaz:
+    # így a ~65sor környéki --> print("Érvénytelen iránymegadás. Kérés megtagadva") részhez ugrik a kód
 
-# megszamoljuk a karaktereket
+# majd megszamoljuk a karaktereket
     for letter in dir:
         # print(letter)
         if letter == "e":
@@ -47,4 +63,9 @@ if all(char in allowed_characters for char in dir):
         print("KN felé nem mozdulunk!")
 
 else:
+
     print("Érvénytelen iránymegadás. Kérés megtagadva")
+
+# itbetyar.hu 2023
+# itbetyar.hu 2023
+# itbetyar.hu 2023
