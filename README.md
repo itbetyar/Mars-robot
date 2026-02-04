@@ -17,6 +17,3 @@ A kód a [Kezdő Python tanfolyamunk](https://itbetyar.hu/python-tanfolyam/) egy
 
 <a  href="https://itbetyar.hu"><img  alt="IT Betyár honlap"  src="https://itbetyar.hu/dload_itb/colab_gomb_itb.webp"  height="30px"></a>
 <a  href="https://itbetyar.hu/python-tanfolyam/"><img  alt="IT Betyár honlap"  src="https://itbetyar.hu/dload_itb/colab_gomb_kpt.webp"  height="30px"></a>
-
-
-<img src="https://github.com/itbetyar/mars-robot/blob/main/mars%20robot%20code.webp?raw=true" alt="Alt text" width="500">
